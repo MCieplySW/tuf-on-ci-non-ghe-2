@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c",
-   "sig": "3045022100beb25685f395223f276017498aef6e4951eb3dc08eb29fad3e24cee02776690002207e8ae44ac797c35e84ebb62a54454681aba3dcb5fe77c677d69e81a348d77168"
+   "sig": ""
   }
  ],
  "signed": {
@@ -16,6 +16,15 @@
      },
      "scheme": "ecdsa-sha2-nistp256",
      "x-tuf-on-ci-keyowner": "@mcieplysw"
+    },
+    "90bc46764ce8b0630f53e7138711851b8b5508709462daa6c94a3b219cf082c7": {
+     "keytype": "sigstore-oidc",
+     "keyval": {
+      "identity": "https://github.com/MCieplySW/tuf-on-ci-non-ghe-2/.github/workflows/online-sign.yml@refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com"
+     },
+     "scheme": "Fulcio",
+     "x-tuf-on-ci-online-uri": "sigstore:"
     }
    },
    "roles": [
@@ -32,13 +41,27 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "90bc46764ce8b0630f53e7138711851b8b5508709462daa6c94a3b219cf082c7"
+     ],
+     "name": "new-role",
+     "paths": [
+      "new-role/*",
+      "new-role/*/*",
+      "new-role/*/*/*",
+      "new-role/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2026-01-16T11:15:59Z",
+  "expires": "2026-01-16T13:26:43Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 2,
+  "version": 3,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
