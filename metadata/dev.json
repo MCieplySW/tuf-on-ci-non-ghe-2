@@ -2,15 +2,22 @@
  "signatures": [
   {
    "keyid": "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c",
-   "sig": "304402201ab934eb347b967eca291900f3968c49844f02ec3eedba1df7fda7a90ee8a0f602207aaa7ee61c0c4539a919935fcd604f66677ae6db6becb0083d6f32bd7dc56855"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-16T11:15:59Z",
+  "expires": "2026-01-16T11:21:10Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "dev/component-A/v0.0.1/artifact.txt": {
+    "hashes": {
+     "sha256": "106b4586410de8d46b979b08450ef639d796e4c27df398346547185016ec7d4d"
+    },
+    "length": 784
+   }
+  },
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
