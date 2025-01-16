@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c",
+   "sig": "3046022100df4de0744f5e24e020e73c7b91cf22b3688330764543f8db20da60d6b1f72e81022100b0825c7a25927b44a4c898852384112ff6ced7ebd0ea7ea468ac59e1c2cb5c6d"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-01-16T10:09:04Z",
+  "keys": {
+   "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElBCrLmuegWABPI8CwFWqxIXhq2eM\n6PrEU+vXopg6HW9xjnhblATNHcum+sN18/5tvTX/eYCiWsJLPX9mnzkHyQ==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@mcieplysw"
+   },
+   "90bc46764ce8b0630f53e7138711851b8b5508709462daa6c94a3b219cf082c7": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/MCieplySW/tuf-on-ci-non-ghe-2/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "90bc46764ce8b0630f53e7138711851b8b5508709462daa6c94a3b219cf082c7"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "90bc46764ce8b0630f53e7138711851b8b5508709462daa6c94a3b219cf082c7"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
